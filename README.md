@@ -46,13 +46,13 @@ What keeps me in this field is simple. I like figuring out how things break, and
 
 It is a modular reconnaissance framework I built in Python. It runs multiple checks on a target domain in parallel and pulls the results into a structured risk report. The focus wasn’t just scanning, but making the output something you can actually read and use.
 
-What it does:
+**What it does:**
 
 Handles OSINT gathering, port scanning, SSL/TLS checks, and DNS enumeration as part of a single flow
 Looks at HTTP security headers, fingerprints the tech stack, and maps findings to known CVEs
 Pulls everything into a structured HTML and PDF report with a calculated risk score
 
-Why it matters:
+**Why it matters:**
 
 Running everything in parallel cuts down the waiting time significantly, so a full scan doesn’t feel slow or repetitive
 The scoring and correlation make it easier to understand what actually matters, instead of leaving you with raw, scattered data
@@ -113,15 +113,22 @@ St. Francis College for Women, Hyderabad, India | Dec 2024 – Jun 2025 |
 Publication:
 Artificial Intelligence in Aging Research: Advanced Models for Detecting and Targeting Cellular Senescence
 Madhya Bharti Journal, Vol. 86, No. 7, 2025
+
 ---
+
 
 ## What I Am Working Towards
 
-I’m working towards pursuing a Master’s in Cybersecurity to build a stronger theoretical base behind the practical work I’ve been doing so far. I want to go deeper into areas like network security, applied cryptography, and risk management not just to understand them, but to actually apply them in real-world scenarios.
+I’m working towards pursuing a Master’s in Cybersecurity to build a stronger theoretical base behind the practical work I’ve been doing so far. 
+I want to go deeper into areas like network security, applied cryptography, and risk management not just to understand them, but to actually 
+apply them in real-world scenarios.
 
-After that, I see myself in a security-focused role. Something along the lines of threat intelligence, SOC, or even security research. I’m especially interested in the defensive side understanding attacks, improving detection, and building tools or processes that make systems more resilient over time.
+After that, I see myself in a security-focused role. Something along the lines of threat intelligence, SOC, or even security research. 
+I’m especially interested in the defensive side understanding attacks, improving detection, and building tools or processes 
+that make systems more resilient over time.
 
-I’m also open to collaborating on research, contributing to open-source projects, and working with people who take cybersecurity seriously. For me, it’s less about the title and more about being in an environment where I can keep learning and building.
+I’m also open to collaborating on research, contributing to open-source projects, and working with people who take cybersecurity seriously.
+For me, it’s less about the title and more about being in an environment where I can keep learning and building.
 
 ---
 
@@ -141,7 +148,7 @@ I am always glad to connect with fellow students, security professionals, resear
 
 - **LinkedIn:** [linkedin.com/in/alisha-chaudhary-](https://www.linkedin.com/in/alisha-chaudhary-/)
 - **GitHub:** [github.com/Alisha-chaudhary](https://github.com/Alisha-chaudhary)
-- **Email:** *[your email address]*
+- **Email:** [Bluxbxllalisha@gmail.com]
 
 ---
 

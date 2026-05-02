@@ -96,14 +96,13 @@ A growing collection of Python scripts covering network analysis, packet inspect
 ## Education
 
 B.Sc. in Computer Science
-St. Francis College for Women, affiliated with Osmania University, Hyderabad, India — 2025
+St. Francis College for Women, affiliated with Osmania University, Hyderabad, India | 2025 |
 
 Relevant Coursework:
 Python, Java, JavaScript, C, R Programming, Database Systems, Data Structures, Mobile App Development, Web App Development
 
 Student Researcher | Co-Author (Peer-Reviewed Publication)
-St. Francis College for Women — Hyderabad, India
-Jan 2025 – Jun 2025
+St. Francis College for Women, Hyderabad, India | Dec 2024 – Jun 2025 |
 
 - Worked on a faculty-guided research project that led to a co-authored UGC CARE Group I–indexed paper on AI applications in healthcare
 - Explored and evaluated deep learning models including Cascade R-CNN, CBAM-YOLOv3, and LSTM-CNN hybrids for pattern detection and classification

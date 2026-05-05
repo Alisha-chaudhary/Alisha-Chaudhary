@@ -61,18 +61,6 @@ The scoring and correlation make it easier to understand what actually matters, 
 
 ---
 
-### [LeakSniper](https://github.com/Alisha-chaudhary/LeakSniper) · TypeScript · Breach Detection Web App
-
-A React + TypeScript web application that checks email addresses and phone numbers against large breach datasets, including the Mother of All Breaches (MOAB). Designed to help individuals and organisations identify exposed credentials before attackers do.
-
-**Key decisions I made:**
-- Architected the component structure and API query flow independently
-- Chose TypeScript over JavaScript for type safety and maintainability
-- Designed the UI to surface results clearly without overwhelming non-technical users
-
-`React` `TypeScript` `Breach data APIs` `Frontend security UX`
-
----
 
 ### [CyberSec Labs](https://github.com/Alisha-chaudhary/CyberSec) · Python · Security Scripting Collection
 
@@ -141,7 +129,7 @@ I am always glad to connect with fellow students, security professionals, resear
 
 - **LinkedIn:** [linkedin.com/in/alisha-chaudhary-](https://www.linkedin.com/in/alisha-chaudhary-/)
 - **GitHub:** [github.com/Alisha-chaudhary](https://github.com/Alisha-chaudhary)
-- **Email:** *[your email address]*
+- **Email:** [Email](bluxbxllalisha@gmail.com)
 
 ---
 

@@ -134,5 +134,5 @@ I am always glad to connect with fellow students, security professionals, resear
 ---
 
 <div align="center">
-<sub>Actively seeking UK MSc Cybersecurity admission · Open to research collaborations · Building in public</sub>
+<sub>· Open to research collaborations · Building in public</sub>
 </div>

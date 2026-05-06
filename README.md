@@ -99,8 +99,9 @@ St. Francis College for Women, Hyderabad, India | Dec 2024 – Jun 2025 |
 - Documented findings and structured research outputs aligned with academic publication standards
 
 Publication:
-Artificial Intelligence in Aging Research: Advanced Models for Detecting and Targeting Cellular Senescence
-Madhya Bharti Journal, Vol. 86, No. 7, 2025
+    Artificial Intelligence in Aging Research: Advanced Models for Detecting and Targeting Cellular Senescence
+    Madhya Bharti Journal, Vol. 86, No. 7, 2025
+
 ---
 
 ## What I Am Working Towards

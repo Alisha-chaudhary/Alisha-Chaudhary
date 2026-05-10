@@ -84,7 +84,7 @@ A growing collection of Python scripts covering network analysis, packet inspect
 ## Education
 
 B.Sc. in Computer Science
-St. Francis College for Women, affiliated with Osmania University, Hyderabad, India | 2025 |
+St. Francis College for Women, affiliated with Osmania University, Hyderabad, India
 
 Relevant Coursework:
 Python, Java, JavaScript, C, R Programming, Database Systems, Data Structures, Mobile App Development, Web App Development

@@ -118,7 +118,7 @@ I’m also open to collaborating on research, contributing to open-source projec
 
 <div align="center">
 
-![Alisha's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Alisha-chaudhary&show_icons=true&theme=default&hide_border=true&count_private=true)
+![Alisha's GitHub Stats](https://github.com/Alisha-chaudhary?tab=overview&from=2026-03-01&to=2026-03-31)
 
 </div>
 

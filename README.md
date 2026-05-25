@@ -114,15 +114,6 @@ I’m also open to collaborating on research, contributing to open-source projec
 
 ---
 
-## GitHub Activity
-
-<div align="center">
-
-![Alisha's GitHub Stats](https://github.com/Alisha-chaudhary?tab=overview&from=2026-03-01&to=2026-03-31)
-
-</div>
-
----
 
 ## Let's Connect
 

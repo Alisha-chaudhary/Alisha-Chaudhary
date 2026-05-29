@@ -1,3 +1,5 @@
+<div align="center">
+
 # Alisha Chaudhary
 
 ### Cybersecurity Analyst · Detection Engineering · OSINT · Vulnerability Research
@@ -6,9 +8,9 @@
 [![Location](https://img.shields.io/badge/Location-Hyderabad%2C%20India-informational?style=flat&logo=googlemaps&logoColor=white)](https://github.com/Alisha-chaudhary)
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-alisha-212C42?style=flat&logo=tryhackme&logoColor=white)](https://tryhackme.com)
 
----
+</div>
 
-## About Me
+---
 
 ## About Me
 

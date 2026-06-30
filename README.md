@@ -1,106 +1,111 @@
-<h1 align="center">Hi, I'm Alisha Chaudhary 👋</h1>
-<h3 align="center">Cybersecurity Analyst · Threat Intelligence · Detection Engineering · SOC Operations</h3>
+# Hi, I'm Alisha Chaudhary 👋
 
-<p align="center">
-  <a href="https://tryhackme.com/p/bluxbxllalisha">
-    <img src="https://tryhackme-badges.s3.amazonaws.com/bluxbxllalisha.png" alt="TryHackMe Badge" />
-  </a>
-</p>
+**Cybersecurity analyst | Threat Intelligence | Vulnerability Research | Security Automation**
 
----
+I'm a cybersecurity graduate based in Hyderabad, India, learning my way through vulnerability research, threat intelligence, detection engineering, and security automation.
 
-## 🧭 About Me
+Most of my learning comes from building things. I take a security problem or curiosity, try to reproduce it in a lab, and then figure out how it behaves in practice. I document what I understand, including what fails along the way.
 
-I'm a cybersecurity analyst based in Hyderabad, India, focused on the intersection of **offensive research** and **defensive engineering** building tools and labs that bridge both perspectives.
-
-My work spans threat intelligence, vulnerability research, SIEM rule development, and Python-based security tooling. I prefer understanding *why* something breaks over simply knowing *that* it does, which is why most of my projects start with a research question, not a tutorial.
-
-I'm currently pursuing advanced research opportunities in cybersecurity, and this GitHub is the clearest record of how I think and work.
+This GitHub is a record of that process. Not just what I built, but how my thinking changes as I learn.
 
 ---
 
-## 🔬 Featured Projects
+## Featured Projects
 
 ### 🔍 [ssh-enum](https://github.com/Alisha-chaudhary/ssh-enum)
-> CVE-2016-6210 timing side-channel analysis with statistical validation
 
-Investigated whether CVE-2016-6210 (OpenSSH username enumeration) still affects modern OpenSSH in a controlled Kali/Ubuntu lab; applied Welch's t-test and Cohen's d to statistically confirm the timing side-channel is closed by default hardening (UsePAM). Built a Python detection pipeline (log parser, pattern detector, JSON alert emitter) covering four enumeration patterns to catch the attempt even when it fails.
-`Python` `Statistical Analysis` `CVE Research` `Detection Engineering` `MITRE ATT&CK`
+**Reproducing and analysing CVE-2016-6210**
+
+This project explores whether the OpenSSH username enumeration vulnerability (CVE-2016-6210) still applies to modern OpenSSH systems.
+
+I reproduced the issue in a controlled Kali Linux and Ubuntu lab. I then analysed timing differences using Welch's t-test and Cohen's d, and built a Python-based detection pipeline to identify multiple username enumeration patterns from authentication logs.
+
+**Python • CVE Research • Detection Engineering • Statistical Analysis**
 
 ---
 
 ### 🧠 [ThreatLens](https://github.com/Alisha-chaudhary/ThreatLens)
-> Threat intelligence & attack surface analysis platform
 
-A Python-based platform for aggregating and contextualizing threat intelligence data. Designed around **NIST CSF**, **OWASP** principles, and **CVSS v3.1** scoring. Includes MITRE ATT&CK mapping, structured documentation (SECURITY.md, ETHICS.md), and a modular architecture built for extensibility.
+**Threat intelligence and vulnerability analysis workflow**
 
-`Python` `MITRE ATT&CK` `NIST CSF` `CVSS v3.1` `Threat Intelligence`
+ThreatLens is a Python project that brings together vulnerability data, threat intelligence, CVSS scoring, and MITRE ATT&CK mapping in one place.
 
----
+It is still evolving. The focus right now is on structuring security data in a way that is easier to analyse and extend over time.
 
-### 📓 [TryHackMe-Writeups](https://github.com/Alisha-chaudhary/TryHackMe-Writeups)
-> Analytical CTF writeups with reasoning-forward documentation
-
-First-person writeups focused on *thought process* over answer reproduction, documenting what I tried, why I tried it, and what the failure modes taught me.
-
-`CTF` `Documentation` `SOC` `Network Security`
+**Python • Threat Intelligence • MITRE ATT&CK • CVSS**
 
 ---
 
+### 📓 [TryHackMe Writeups](https://github.com/Alisha-chaudhary/TryHackMe-Writeups)
 
-### 🔐 [BreachProbe](https://github.com/Alisha-chaudhary/BreachProbe) *(In Development)*
-> Privacy-first offline breach intelligence CLI tool
+**Learning through practice**
 
-An offline-first CLI for breach data analysis that deliberately avoids external API calls to protect user privacy. Built with responsible data handling as a core design constraint, not an afterthought.
+These writeups document how I approach security labs, what I try, what breaks, and what I learn from it.
 
-`Python` `CLI` `Privacy Engineering` `Breach Intelligence`
+The focus is on process rather than answers.
 
+**CTF • Documentation • Network Security**
 
 ---
 
-## 🛠️ Skills & Stack
+## Open Source
 
-**Languages & Scripting**
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)
+I'm beginning to contribute to open-source projects as part of my learning.
 
-**Security & Frameworks**
-![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-E10000?style=flat)
-![NIST CSF](https://img.shields.io/badge/NIST%20CSF-003087?style=flat)
-![OWASP](https://img.shields.io/badge/OWASP-000000?style=flat&logo=owasp&logoColor=white)
+I recently submitted a pull request to the **MITRE ATT&CK Python** library. It fixes an `AttributeError`, adds regression tests, and is currently under maintainer review.
+
+---
+
+## Home Lab
+
+I use a VMware Workstation Pro lab with Kali Linux and Ubuntu virtual machines for experimentation.
+
+Most of my work starts here. I use it to reproduce vulnerabilities, analyse network traffic, and test ideas before turning them into projects.
+
+---
+
+## Currently Exploring
+
+- Detection engineering
+- Threat intelligence workflows
+- CVE analysis and exploitability assessment
+- Malware analysis fundamentals
+- Python for security automation
+
+---
+
+## Skills
+
+**Programming**
+
+Python • Bash • SQL • Java • JavaScript • HTML • CSS
+
+**Security**
+
+Threat Intelligence • Vulnerability Research • Detection Engineering • MITRE ATT&CK • NIST CSF • OWASP • CVSS
 
 **Tools**
-![Nmap](https://img.shields.io/badge/Nmap-4B275F?style=flat)
-![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat)
-![Hydra](https://img.shields.io/badge/Hydra-darkred?style=flat)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat&logo=wireshark&logoColor=white)
-![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat&logo=splunk&logoColor=white)
 
-**Platforms & OS**
-![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=flat&logo=kalilinux&logoColor=white)
-![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white)
-![VMware](https://img.shields.io/badge/VMware_Workstation_Pro-607078?style=flat&logo=vmware&logoColor=white)
+Wireshark • Splunk • Nmap • Metasploit • Hydra • Git
+
+**Platforms**
+
+Kali Linux • Ubuntu • VMware Workstation Pro
 
 ---
 
-## 🧪 Home Lab
+## Certifications
 
-I run a **VMware Workstation Pro** environment with dedicated **Kali Linux** and **Ubuntu** VMs for hands-on security research. Most of my project work, from CVE reproduction to detection rule testing is conducted in this isolated lab rather than cloud-based sandboxes, giving me full control over network conditions and attack scenarios.
-
----
-
-## 📜 Certifications
-
-- 🎓 **Google Cybersecurity Certificate** — Coursera / Google
-- 🏆 **TryHackMe** — Top 40% global rank · 4 badges (3 rare) · 7 rooms completed
+- Google Cybersecurity Professional Certificate
+- TryHackMe
 
 ---
 
-## 📊 GitHub Stats
+## GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Alisha-chaudhary&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alisha-chaudhary&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Alisha-chaudhary&show_icons=true&hide_border=true" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alisha-chaudhary&layout=compact&hide_border=true" height="165"/>
 </p>
 
 ---

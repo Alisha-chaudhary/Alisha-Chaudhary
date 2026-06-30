@@ -24,8 +24,7 @@ I'm currently pursuing advanced research opportunities in cybersecurity, and thi
 ### 🔍 [ssh-enum](https://github.com/Alisha-chaudhary/ssh-enum)
 > CVE-2016-6210 timing side-channel analysis with statistical validation
 
-Reproduced the OpenSSH username enumeration vulnerability in a controlled Kali/Ubuntu lab environment. Went beyond exploitation to apply **Welch's t-test** and **Cohen's d effect size** for statistically rigorous timing differentiation. Includes detection engineering output and SIEM-ready alert logic mapped to **MITRE ATT&CK T1110**.
-
+Investigated whether CVE-2016-6210 (OpenSSH username enumeration) still affects modern OpenSSH in a controlled Kali/Ubuntu lab; applied Welch's t-test and Cohen's d to statistically confirm the timing side-channel is closed by default hardening (UsePAM). Built a Python detection pipeline (log parser, pattern detector, JSON alert emitter) covering four enumeration patterns to catch the attempt even when it fails.
 `Python` `Statistical Analysis` `CVE Research` `Detection Engineering` `MITRE ATT&CK`
 
 ---

@@ -1,88 +1,193 @@
-# Alisha Chaudhary
+# Hi, I'm Alisha Chaudhary 👋
 
-### Cybersecurity Analyst · Threat Intelligence · Vulnerability Research · Security Automation
+### Cybersecurity Analyst | Threat Intelligence | Vulnerability Assessment | CVE Research | Security Research
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Alisha--Chaudhary-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alisha-chaudhary-/)
-[![Location](https://img.shields.io/badge/Location-Hyderabad%2C%20India-informational?style=flat&logo=googlemaps&logoColor=white)](https://github.com/Alisha-chaudhary)
-
----
-
-## About Me
-
-I came into cybersecurity from a science background - a B.Sc. in Computer Science with coursework spanning Python, Java, databases, and data structures, not from a traditional security or CS-heavy track. What I've found is that the habits from a science background transfer directly, form a hypothesis, build a controlled environment to test it, measure the result, and write down what actually happened, including the parts that didn't work.
-
-That approach is the throughline in my projects. In `ssh-enum`, I didn't just confirm a vulnerability exists - I used Welch's t-test and Cohen's d to statistically measure whether timing differences in OpenSSH responses were significant enough to be exploitable. That's a methodology I picked up from research work, applied to a security question.
-
-I'm currently applying to Master's programmes in Cybersecurity to build the theoretical depth, network security, applied cryptography, risk management - behind what I've been teaching myself hands-on through labs, CVE research, and the Google Cybersecurity Certificate.
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Threat_Intelligence-00599C?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/CVE_Research-DC2626?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/MITRE_ATT%26CK-6A1B9A?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Open_Source-181717?style=for-the-badge&logo=github"/>
+</p>
 
 ---
 
-## Projects
+## About
 
-### [ThreatLens](https://github.com/Alisha-chaudhary/ThreatLens) — Python · Security Reconnaissance Tool
-A modular reconnaissance framework that runs OSINT gathering, port scanning, SSL/TLS checks, DNS enumeration, HTTP header analysis, and tech fingerprinting against a target domain in parallel, then maps findings to known CVEs and compiles everything into a structured HTML/PDF report with a calculated risk score. The focus was as much on making results usable as on the scanning itself.
+I build practical security tools, investigate published vulnerabilities through controlled experimentation, and translate technical findings into actionable defensive intelligence.
 
-`Python` `asyncio` `Shodan API` `NVD/CVE APIs` `PDF reporting`
+My work focuses on **threat intelligence, vulnerability assessment, CVE research, and security automation**. Rather than accepting published security claims at face value, I enjoy validating them through reproducible experimentation, careful measurement, and transparent reporting.
 
-### [ssh-enum](https://github.com/Alisha-chaudhary/ssh-enum) — Python · CVE Research
-Investigates whether OpenSSH still leaks valid usernames through response or timing differences (CVE-2016-6210), reproduced in a controlled Ubuntu 22.04.5 lab. Timing differences are evaluated using Welch's t-test and Cohen's d rather than eyeballed, and a Python detection pipeline flags enumeration patterns from authentication logs.
-
-`Python` `CVE Research` `Statistical Analysis` `Detection Engineering`
-
-### [CyberSec](https://github.com/Alisha-chaudhary/CyberSec) — Python & SQL · Security Scripting Toolkit
-A collection of scripts built during the Google Cybersecurity Certificate, covering log analysis, regex-based IP detection, access control automation, and SQL-based threat hunting.
-
-`Python` `SQL` `Log Analysis` `Automation`
-
-### [TryHackMe Writeups](https://github.com/Alisha-chaudhary/TryHackMe-Writeups)
-Documentation of labs worked through on TryHackMe, focused on the reasoning process - What was tried, what failed, what that revealed rather than just final answers.
-
-`CTF` `Documentation` `Network Security`
+With a multidisciplinary background in **Computer Applications, Biochemistry, and Chemistry**, I approach cybersecurity as an evidence-driven discipline: formulate a hypothesis, build a controlled environment, measure the outcome, and document findings that others can reproduce.
 
 ---
 
-## What's Next
+# 🔬 Featured Projects
 
-I'm in the early planning stages of an AI-assisted SIEM copilot, an assistant that would query sources like Shodan and VirusTotal directly and surface a condensed verdict (e.g. flagging poor IP/domain reputation) instead of requiring an analyst to cross-reference each source manually. Nothing's built yet, right now I'm scoping the integrations and what a useful output actually looks like before writing code.
+## 🔐 ssh-enum
+### Statistical Validation Study of CVE-2016-6210
 
----
+<p>
+<img src="https://img.shields.io/badge/CVE-2016--6210-red?style=flat-square"/>
+<img src="https://img.shields.io/badge/OpenSSH-Tested-success?style=flat-square"/>
+<img src="https://img.shields.io/badge/Welch's_t--test-Statistical_Analysis-blue?style=flat-square"/>
+<img src="https://img.shields.io/badge/Cohen's_d-Effect_Size-orange?style=flat-square"/>
+</p>
 
-## Open Source
+> **Research Summary**
+>
+> **Objective:** Re-evaluate CVE-2016-6210 on a modern default OpenSSH deployment.
+>
+> **Method:** Manual probing, Hydra, and Metasploit were used to collect authentication timing measurements. Welch's *t*-test and Cohen's *d* were applied to distinguish genuine timing signals from measurement noise.
+>
+> **Finding:** No statistically significant timing difference was observed on the tested Ubuntu Server default PAM configuration, indicating that the documented timing side-channel was not reproducible under these conditions.
 
-My first pull request went to the MITRE ATT&CK Python library - it fixed an `AttributeError` and added regression tests, currently under maintainer review.
+This project re-investigates **CVE-2016-6210**, an OpenSSH username enumeration timing side-channel, to determine whether it remains observable on a modern Ubuntu Server configured with default PAM authentication.
 
----
+Rather than relying on visual inspection of response times, the project evaluates timing measurements statistically. The outcome is a reproducible validation study demonstrating that carefully supported negative results can be as valuable as positive findings when assessing the current security posture of published vulnerabilities.
 
-## Skills
+**Stack**
 
-**Languages:** Python · SQL · JavaScript
-**Security:** CVE Analysis · OSINT · Port Scanning · SSL/TLS Inspection · DNS Enumeration · Threat Intelligence · MITRE ATT&CK · OWASP Top 10
-**Tools:** Wireshark · Nmap · Burp Suite · Shodan · Git · Metasploit
-**Platforms:** Kali Linux · Ubuntu · VMware Workstation Pro
-
----
-
-## Background
-
-**B.Sc. Computer Science** — St. Francis College for Women (Osmania University), Hyderabad
-
-**Student Researcher / Co-Author** — Dec 2024 – Jun 2025
-Co-authored a UGC CARE Group I–indexed paper evaluating deep learning models (Cascade R-CNN, CBAM-YOLOv3, LSTM-CNN hybrids) for pattern detection, reaching up to 99.10% accuracy in specific cases.
-*"Artificial Intelligence in Aging Research: Advanced Models for Detecting and Targeting Cellular Senescence"* —> Madhya Bharti Journal, Vol. 86, No. 7, 2025
-
-**Google Cybersecurity Professional Certificate**
+`Python` • `OpenSSH` • `Hydra` • `Metasploit` • `Ubuntu Server` • `Kali Linux`
 
 ---
 
-## GitHub Stats
+## 🔍 ThreatLens
 
-[![Alisha's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Alisha-chaudhary&show_icons=true&theme=default&hide_border=true&count_private=true)](https://github.com/Alisha-chaudhary)
+Python-based vulnerability assessment platform integrating reconnaissance, CVE intelligence, weighted risk scoring, and automated reporting into a single workflow.
+
+Features include:
+
+- DNS Enumeration
+- SSL/TLS Inspection
+- HTTP Security Header Analysis
+- Technology Fingerprinting
+- OSINT Integration
+- CVE Correlation
+- HTML/PDF Reporting
+
+**Stack**
+
+`Python` • `AsyncIO` • `NVD API` • `Shodan` • `HTML` • `PDF`
 
 ---
 
-## Let's Connect
+## 📑 CVE Threat Intelligence Reports
 
-Open to cybersecurity research collaborations, open-source contributions, and conversations about MSc programmes.
+Technical reports analysing recent vulnerabilities through:
 
-- **LinkedIn:** [linkedin.com/in/alisha-chaudhary-](https://www.linkedin.com/in/alisha-chaudhary-/)
-- **GitHub:** [github.com/Alisha-chaudhary](https://github.com/Alisha-chaudhary)
+- CVSS Assessment
+- MITRE ATT&CK Mapping
+- Exploitation Context
+- Indicators of Compromise
+- Detection Opportunities
+- Defensive Recommendations
+
+---
+
+## 🛡️ CyberSec Toolkit
+
+Collection of Python and SQL security scripts covering log analysis, detection engineering exercises, access control automation, and introductory threat hunting.
+
+---
+
+# 📚 Research
+
+### Artificial Intelligence in Aging Research: Advanced Models for Detecting and Targeting Cellular Senescence
+
+Co-author of a peer-reviewed publication investigating deep learning approaches for cellular senescence detection.
+
+**Published in**
+
+**Madhya Bharti Journal**
+
+UGC CARE Group I
+
+Vol. 86, No. 7 (2025)
+
+---
+
+# 🌍 Open Source
+
+Contributed to the official **MITRE ATT&CK Python library** by:
+
+- Identifying an AttributeError in the navlayers exporter
+- Implementing the fix
+- Expanding automated regression test coverage
+- Submitting a pull request currently under maintainer review
+
+---
+
+# 💻 Technical Skills
+
+### Languages
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![C](https://img.shields.io/badge/C-00599C?style=flat-square)
+
+### Security
+
+![Threat Intelligence](https://img.shields.io/badge/Threat_Intelligence-blue?style=flat-square)
+![Vulnerability Assessment](https://img.shields.io/badge/Vulnerability_Assessment-red?style=flat-square)
+![CVE Research](https://img.shields.io/badge/CVE_Research-darkred?style=flat-square)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE_ATT%26CK-purple?style=flat-square)
+![NIST CSF](https://img.shields.io/badge/NIST_CSF-005BBB?style=flat-square)
+![OWASP Top 10](https://img.shields.io/badge/OWASP_Top_10-black?style=flat-square)
+
+### Tools
+
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
+![Nmap](https://img.shields.io/badge/Nmap-00457C?style=flat-square)
+![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=flat-square)
+![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat-square)
+![Hydra](https://img.shields.io/badge/Hydra-555555?style=flat-square)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+
+### Platforms
+
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white)
+![Kali Linux](https://img.shields.io/badge/Kali-557C94?style=flat-square&logo=kalilinux&logoColor=white)
+![VMware](https://img.shields.io/badge/VMware-607078?style=flat-square)
+
+---
+
+# 🌱 Currently Exploring
+
+- Infrastructure Security
+- Detection Engineering
+- Threat Hunting
+- Applied Cryptography
+- Cloud Security
+
+---
+
+# 📊 GitHub Analytics
+
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Alisha-chaudhary&show_icons=true&rank_icon=github&theme=transparent"/>
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alisha-chaudhary&layout=compact&theme=transparent"/>
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=Alisha-chaudhary&theme=transparent"/>
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Alisha-chaudhary&label=Profile%20Views&color=0e75b6&style=flat"/>
+</p>
+
+---
+
+# 🤝 Let's Connect
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Alisha_Chaudhary-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/alisha-chaudhary-/)
+
+[![GitHub](https://img.shields.io/badge/GitHub-Alisha--chaudhary-181717?style=for-the-badge&logo=github)](https://github.com/Alisha-chaudhary)
+
+I'm always interested in cybersecurity research, vulnerability analysis, open-source collaboration, and conversations about infrastructure security and threat intelligence.

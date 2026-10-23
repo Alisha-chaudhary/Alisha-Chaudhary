@@ -1,4 +1,4 @@
-name: Generate contribution snake
+name: Generate fire contribution grid
 
 on:
   schedule:
@@ -7,14 +7,14 @@ on:
   push:
     branches: [main]
     paths:
-      - ".github/workflows/snake.yml"
-      - ".github/scripts/style_snake.py"
+      - ".github/workflows/fire-contribution.yml"
+      - ".github/scripts/build_fire.py"
 
 permissions:
   contents: write                # needed so the job can commit the SVG back to main
 
 concurrency:
-  group: snake
+  group: fire
   cancel-in-progress: true
 
 jobs:
@@ -24,24 +24,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build snake SVG from the contribution graph
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            output/github-contribution-grid-snake.svg?color_snake=#D9D2CB&color_dots=#1A0C12,#391521,#6E2A33,#A83B32,#C58A63
-
-      - name: Add obsidian background
-        run: python .github/scripts/style_snake.py output/github-contribution-grid-snake.svg
+      - name: Build fire contribution SVG from the contribution graph
+        run: python .github/scripts/build_fire.py
 
       - name: Commit if the SVG changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add output/github-contribution-grid-snake.svg
+          git add output/fire-contribution.svg
           if git diff --cached --quiet; then
             echo "No change to commit"
           else
-            git commit -m "chore(snake): update contribution snake"
+            git commit -m "chore(fire): update contribution fire grid"
             git push
           fi

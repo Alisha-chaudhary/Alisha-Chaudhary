@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 180" width="100%" height="180" role="img" aria-labelledby="fire-title fire-desc">
+  <title id="fire-title">Alisha Chaudhary's GitHub contribution fire grid</title>
+  <desc id="fire-desc">Animated fire-effect contribution grid placeholder. Run the Generate fire contribution grid workflow to render your real contribution graph.</desc>
+  <rect x="0" y="0" width="660" height="180" rx="10" fill="#0B0B0E"/>
+  <text x="330" y="90" font-family="Georgia, serif" font-size="14" fill="#D94F1F" text-anchor="middle" dominant-baseline="middle">Running fire contribution grid…</text>
+  <text x="330" y="112" font-family="Georgia, serif" font-size="12" fill="#8A2222" text-anchor="middle" dominant-baseline="middle">Open Actions → Generate fire contribution grid → Run workflow</text>
+</svg>

@@ -76,7 +76,7 @@
 
 <div align="center">
 
-<img src="output/github-contribution-grid-snake.svg" alt="Animated snake travelling across my GitHub contribution graph" width="100%">
+<img src="output/fire-contribution.svg" alt="Animated fire effect across my GitHub contribution graph" width="100%">
 
 <a href="https://github.com/Alisha-chaudhary"><img src="https://github-readme-stats.vercel.app/api?username=Alisha-chaudhary&show_icons=true&hide_border=false&bg_color=0B0B0E&title_color=C58A63&text_color=D9D2CB&icon_color=A83B32&border_color=391521&rank_icon=github" alt="GitHub statistics card" height="165"></a>
 <a href="https://github.com/Alisha-chaudhary?tab=repositories"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alisha-chaudhary&layout=compact&bg_color=0B0B0E&title_color=C58A63&text_color=D9D2CB&border_color=391521" alt="Most used languages" height="165"></a>

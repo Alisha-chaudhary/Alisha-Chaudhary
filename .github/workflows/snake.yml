@@ -1,0 +1,47 @@
+name: Generate contribution snake
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"      # every 12 hours
+  workflow_dispatch:             # lets you run it by hand from the Actions tab
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/snake.yml"
+      - ".github/scripts/style_snake.py"
+
+permissions:
+  contents: write                # needed so the job can commit the SVG back to main
+
+concurrency:
+  group: snake
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build snake SVG from the contribution graph
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            output/github-contribution-grid-snake.svg?color_snake=#D9D2CB&color_dots=#1A0C12,#391521,#6E2A33,#A83B32,#C58A63
+
+      - name: Add obsidian background
+        run: python .github/scripts/style_snake.py output/github-contribution-grid-snake.svg
+
+      - name: Commit if the SVG changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/github-contribution-grid-snake.svg
+          if git diff --cached --quiet; then
+            echo "No change to commit"
+          else
+            git commit -m "chore(snake): update contribution snake"
+            git push
+          fi

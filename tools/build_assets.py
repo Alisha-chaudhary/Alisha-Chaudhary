@@ -139,20 +139,15 @@ def pill(name, label):
 
 
 # ---------------------------------------------------------------- section header
-# Subtle warm gradient background for sections 3+ so they are not "dull".
-SECTION_GRAD = (f'<radialGradient id="secgrad" cx="0.5" cy="0.5" r="0.75">'
-                f'<stop offset="0" stop-color="{EMBER}" stop-opacity=".16"/>'
-                f'<stop offset="1" stop-color="{OBS}" stop-opacity="1"/></radialGradient>')
-
-def section(name, num, label, heading, bgfill=OBS, bgdefs="", head_size=27):
+def section(name, num, label, heading, head_size=29):
     W, H = 1000, 88
-    b = [f'<rect width="{W}" height="{H}" rx="10" fill="{bgfill}"/>',
+    b = [f'<rect width="{W}" height="{H}" rx="10" fill="{OBS}"/>',
          t(18, 60, num, size=46, fill=EMBER, family=SERIF),
          t(100, 34, f"{num} / {label}", size=12, fill=COPPER, spacing=4),
          t(100, 64, heading, size=head_size, fill=ASH, family=SERIF),
          f'<rect x="100" y="76" width="40" height="2" fill="{EMBER}"/>',
          f'<rect x="140" y="76.5" width="{W-158}" height="1" fill="{WINE_LIGHT}"/>']
-    svg(name, W, H, "".join(b), f"{num} / {label}", heading, defs=bgdefs)
+    svg(name, W, H, "".join(b), f"{num} / {label}", heading)
 
 
 # ---------------------------------------------------------------- terminal
@@ -471,12 +466,7 @@ if __name__ == "__main__":
         ("sec-06-record.svg", "06", "RECORD", "Experience, research and education"),
         ("sec-07-activity.svg", "07", "ACTIVITY", "Public contribution record"),
     ]:
-        if n == "sec-02-domains.svg":
-            section(n, num, lab, head, head_size=29)  # larger heading on slide 2
-        elif n == "sec-01-profile.svg":
-            section(n, num, lab, head)                 # plain obsidian (liked background)
-        else:
-            section(n, num, lab, head, bgfill="url(#secgrad)", bgdefs=SECTION_GRAD)  # contrasting warm bg
+        section(n, num, lab, head)   # all sections: obsidian bg + size 29 heading (match sec-02)
     terminal()
     domains()
     projects()

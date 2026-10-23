@@ -42,6 +42,7 @@ def query_contributions(token):
               contributionDays {
                 date
                 contributionCount
+                weekday
               }
             }
           }
@@ -64,7 +65,8 @@ def query_contributions(token):
         with urllib.request.urlopen(req, timeout=40) as resp:
             return json.loads(resp.read().decode("utf-8"))
     except urllib.error.HTTPError as exc:
-        sys.exit(f"build_fire.py: GitHub API HTTP {exc.code}: {exc.read().decode('utf-8', 'ignore')[:500]}")
+        body = exc.read().decode("utf-8", "ignore")
+        sys.exit(f"build_fire.py: GitHub API HTTP {exc.code}: {body[:500]}")
     except urllib.error.URLError as exc:
         sys.exit(f"build_fire.py: GitHub API request failed: {exc}")
 
@@ -79,17 +81,15 @@ def build_svg(weeks):
     width = PAD_X * 2 + COLS * (CELL + GAP)
     height = PAD_Y * 2 + ROWS * (CELL + GAP)
 
-    # Collect active cells (count > 0) with their week index, weekday index, count.
+    # Collect active cells (count > 0).
     active = []
     for wi, week in enumerate(weeks):
         for day in week.get("contributionDays", []):
             count = int(day.get("contributionCount", 0))
+            wd = int(day.get("weekday", 0))
             if count > 0:
-                # weekday 0 = Sunday ... 6 = Saturday. GitHub grids start week on Sunday.
-                wd = int(day.get("weekday", 0)) if "weekday" in day else None
                 active.append((wi, wd, count))
 
-    # Map count to a color index for flame variation.
     def flame_hue(count):
         if count <= 2:
             return 0   # red flame
@@ -97,13 +97,12 @@ def build_svg(weeks):
             return 1   # orange flame
         return 2       # yellow/white hot flame
 
-    # Flame particle definitions (teardrop paths) + SMIL animation.
+    # Flame particle definitions with SMIL animation.
     flames = []
     flame_id = 0
     for (wi, wd, count) in active:
         cx = PAD_X + wi * (CELL + GAP) + CELL / 2
         cy = PAD_Y + wd * (CELL + GAP) + CELL / 2
-        # Number of flame particles scales with intensity (1-3).
         n_flames = 1 if count <= 5 else (2 if count <= 12 else 3)
         for k in range(n_flames):
             delay = k * 0.6
@@ -111,12 +110,11 @@ def build_svg(weeks):
             rise = 6 + (k % 4) * 4
             fh = flame_hue(count)
             if fh == 0:
-                fcol = "#FF4500"   # orange-red
+                fcol = "#FF4500"
             elif fh == 1:
-                fcol = "#FFA500"   # orange
+                fcol = "#FFA500"
             else:
-                fcol = "#FFFF00"   # yellow
-            # Teardrop flame path pointing up.
+                fcol = "#FFFF00"
             path = f"M {cx:.1f},{cy:.1f} Q {cx-2:.1f},{cy+3:.1f} {cx:.1f},{cy-8:.1f} Q {cx+2:.1f},{cy+3:.1f} {cx:.1f},{cy:.1f} Z"
             flames.append(
                 f'<g data-flame="{flame_id}">'
@@ -153,8 +151,9 @@ def build_svg(weeks):
 def main():
     token = os.environ.get("GITHUB_TOKEN")
     if not token:
-        sys.exit("build_fire.py: GITHUB_TOKEN is not set (needs contents: write + repo scope)")
+        sys.exit("build_fire.py: GITHUB_TOKEN is not set. Make sure the workflow has contents: write permission.")
 
+    print(f"build_fire.py: querying contributions for {LOGIN}…")
     result = query_contributions(token)
 
     if "errors" in result:
@@ -162,17 +161,22 @@ def main():
 
     user = (result.get("data") or {}).get("user")
     if not user:
-        sys.exit("build_fire.py: no user data returned from GraphQL API")
+        sys.exit("build_fire.py: no user data returned from GraphQL API (check the login name)")
 
     weeks = user.get("contributionsCollection", {}).get("contributionCalendar", {}).get("weeks", [])
     if not weeks:
         sys.exit("build_fire.py: no contribution weeks returned")
 
+    print(f"build_fire.py: got {len(weeks)} weeks")
     svg = build_svg(weeks)
     os.makedirs("output", exist_ok=True)
     with open(OUTPUT, "w", encoding="utf-8") as f:
         f.write(svg)
-    print(f"build_fire.py: wrote {OUTPUT} ({len(weeks)} weeks, {sum(len(w.get('contributionDays', [])) for w in weeks)} days)")
+    total_days = sum(len(w.get("contributionDays", [])) for w in weeks)
+    active_days = sum(
+        1 for w in weeks for d in w.get("contributionDays", []) if int(d.get("contributionCount", 0)) > 0
+    )
+    print(f"build_fire.py: wrote {OUTPUT} ({total_days} days, {active_days} active)")
 
 if __name__ == "__main__":
     main()

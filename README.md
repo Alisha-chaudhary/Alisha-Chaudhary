@@ -8,9 +8,6 @@
 <a href="https://github.com/Alisha-chaudhary?tab=repositories"><img src="assets/pill-repos.svg" alt="All repositories" height="36"></a>
 
 </div>
-
-<br>
-
 <img src="assets/sec-01-profile.svg" alt="01 / Profile. Who I am and how I work" width="100%">
 
 <img src="assets/terminal-profile.svg" alt="I build practical security tools, investigate published vulnerabilities through controlled experimentation, and translate technical findings into actionable defensive intelligence. Focus areas are evidence-led analysis, security assessment, identity governance, vulnerability research, risk documentation and Python security automation. Based in Hyderabad, India. Currently exploring detection engineering, threat hunting and cloud security." width="100%">

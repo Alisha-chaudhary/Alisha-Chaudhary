@@ -33,14 +33,21 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      
       - name: Commit if the SVG changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add output/fire-contribution.svg
+
           if git diff --cached --quiet; then
-            echo "No change to commit"
-          else
-            git commit -m "chore(fire): update contribution fire grid"
-            git push
+            echo "No changes to commit."
+            exit 0
           fi
+
+          git commit -m "chore(fire): update contribution fire grid"
+
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main

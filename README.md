@@ -67,7 +67,7 @@
 | **Experience** | **Cybersecurity Analyst Intern**, Deepharsh Innovations Private Limited, Jan 2026 to Jun 2026. Worked with the security team on vulnerability and security analysis, CVE research, compliance-oriented security review and technology assessment across client-facing IT environments, including projects involving government-related clients. |
 | **Research** | Co-author of *Artificial Intelligence in Aging Research: Advanced Models for Detecting and Targeting Cellular Senescence*, Madhya Bharti Journal (UGC CARE Group I), Vol. 86, No. 7, 2025. Independent vulnerability research in [ssh-enum](https://github.com/Alisha-chaudhary/ssh-enum). |
 | **Open source** | Pull request to [mitreattack-python](https://github.com/mitre-attack/mitreattack-python) fixing an `AttributeError` in the navlayers exporter, with regression tests added. Under maintainer review. |
-| **Education** | B.Sc. Computer Applications, St. Francis College for Women, Osmania University. CGPA 8.45 / 10. |
+| **Education** | B.Sc. Computer Applications, St. Francis College for Women, Osmania University. |
 | **Certification** | Google Cybersecurity Professional Certificate |
 
 <br>
@@ -88,3 +88,4 @@
 <br>
 
 <img src="assets/footer.svg" alt="EMBER ARCHIVE. Security through evidence, clarity, and careful engineering." width="100%">
+

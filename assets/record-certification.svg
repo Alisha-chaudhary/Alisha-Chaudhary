@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 86" width="1000" height="86" role="img" aria-label="CERTIFICATION">
+<title>CERTIFICATION</title>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#291018"/><stop offset="1" stop-color="#0B0B0E"/></linearGradient></defs>
+<rect x="1" y="1" width="998" height="84" rx="12" fill="url(#bg)" stroke="#4A1B2A" stroke-width="1.5"/>
+<rect x="1" y="16" width="4" height="54" rx="2" fill="#A83B32"/>
+<text x="28" y="48" fill="#C58A63" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">CERTIFICATION</text>
+<line x1="245" y1="20" x2="245" y2="66" stroke="#4A1B2A"/>
+<text x="270" y="54" fill="#D9D2CB" font-family="Arial, Helvetica, sans-serif" font-size="17">Google Cybersecurity Professional Certificate.</text>
+</svg>

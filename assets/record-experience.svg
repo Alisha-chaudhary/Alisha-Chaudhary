@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 124" width="1000" height="124" role="img" aria-label="EXPERIENCE">
+<title>EXPERIENCE</title>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#291018"/><stop offset="1" stop-color="#0B0B0E"/></linearGradient></defs>
+<rect x="1" y="1" width="998" height="122" rx="12" fill="url(#bg)" stroke="#4A1B2A" stroke-width="1.5"/>
+<rect x="1" y="16" width="4" height="92" rx="2" fill="#A83B32"/>
+<text x="28" y="67" fill="#C58A63" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">EXPERIENCE</text>
+<line x1="245" y1="20" x2="245" y2="104" stroke="#4A1B2A"/>
+<text x="270" y="54" fill="#D9D2CB" font-family="Arial, Helvetica, sans-serif" font-size="17">Cybersecurity Analyst Intern, Deepharsh Innovations Private Limited | Jan 2026 to Jun 2026.</text>
+<text x="270" y="77" fill="#D9D2CB" font-family="Arial, Helvetica, sans-serif" font-size="17">Vulnerability and security analysis, CVE research, compliance-oriented review and technology</text>
+<text x="270" y="100" fill="#D9D2CB" font-family="Arial, Helvetica, sans-serif" font-size="17">assessment across client-facing IT environments, including government-related client projects.</text>
+</svg>

@@ -1,3 +1,4 @@
+
 <div align="center">
 
 <img src="assets/hero.svg" alt="Alisha Chaudhary, Cybersecurity Analyst focused on IAM and access governance and vulnerability intelligence. Evidence first. Understand the system. Make the finding actionable. Hyderabad, India." width="100%">
@@ -19,9 +20,13 @@
 <img src="assets/sec-02-domains.svg" alt="02 / Security domains. Where the work sits" width="100%">
 
 <img src="assets/domain-iam.svg" alt="Identity and Access Management. RBAC, least privilege, access reviews, joiner-mover-leaver workflows, segregation of duties, authorisation policies, simulated PAM. Evidence from IdentityGuard, a local lab." width="100%">
+
 <img src="assets/domain-vuln.svg" alt="Vulnerability Management. CVE research, CVSS v3.1, NVD API, severity assessment, risk prioritisation, remediation guidance. Evidence from ThreatLens, ssh-enum and internship work." width="100%">
+
 <img src="assets/domain-intel.svg" alt="Threat Intelligence and Investigation. Phishing analysis, BEC analysis, SPF DKIM DMARC, indicator enrichment, source validation, MITRE ATT&CK mapping. Evidence from PhishMind and synthetic samples." width="100%">
+
 <img src="assets/domain-eng.svg" alt="Security Engineering. Python automation, API integration, FastAPI, Pytest, audit logging, structured reporting, SQL. Evidence from ThreatLens, IdentityGuard and CyberSec." width="100%">
+
 <img src="assets/domain-detect.svg" alt="Detection and Telemetry. Windows event analysis, Sysmon, Splunk SPL, ATT&CK-mapped detections, telemetry troubleshooting. Evidence from the SOC Detection Lab, documented." width="100%">
 
 <br>
@@ -36,15 +41,17 @@
 
 <a href="https://github.com/Alisha-chaudhary/ssh-enum"><img src="assets/project-ssh-enum.svg" alt="ssh-enum, a research study. Re-investigation of CVE-2016-6210 on a default Ubuntu Server configuration using Welch's t-test and Cohen's d. No significant timing difference was found, documented as a reproducible negative result." width="100%"></a>
 
+<br>
+
 **Also in the archive**
 
-| Repository | What it holds |
-| :-- | :-- |
-| [CTF-Writeups](https://github.com/Alisha-chaudhary/CTF-Writeups) | Analytical write-ups for TryHackMe, HackTheBox and LetsDefend rooms, reasoning-forward rather than answer-forward |
-| [CyberSec](https://github.com/Alisha-chaudhary/CyberSec) | Python and SQL scripts built during the Google Cybersecurity Certificate, covering log analysis, regex-based IP detection, access control automation and SQL threat hunting |
-| SOC Detection Lab | Kali-to-Windows attack simulation with Sysmon and Splunk telemetry and SPL detections mapped to MITRE ATT&CK. The lab has since been decommissioned, so the documentation is the record |
+<a href="https://github.com/Alisha-chaudhary/CTF-Writeups"><img src="assets/archive-ctf.svg" alt="CTF-Writeups. Analytical write-ups for TryHackMe, HackTheBox and LetsDefend rooms, with reasoning-forward explanations rather than answer-forward solutions." width="100%"></a>
 
-<!-- When the SOC Detection Lab repository is public, turn its name above into a link. -->
+<a href="https://github.com/Alisha-chaudhary/CyberSec"><img src="assets/archive-cybersec.svg" alt="CyberSec. Python and SQL scripts from the Google Cybersecurity Certificate, covering log analysis, regex-based IP detection, access control automation and SQL threat hunting." width="100%"></a>
+
+<img src="assets/archive-soc.svg" alt="SOC Detection Lab. Kali-to-Windows attack simulation with Sysmon, Splunk telemetry and SPL detections mapped to MITRE ATT&CK. Decommissioned lab; documentation remains as the record." width="100%">
+
+<!-- When the SOC Detection Lab repository is public, link its card above. -->
 
 <br>
 
@@ -62,13 +69,21 @@
 
 <img src="assets/sec-06-record.svg" alt="06 / Record. Experience, research and education" width="100%">
 
-| | |
-| :-- | :-- |
-| **Experience** | **Cybersecurity Analyst Intern**, Deepharsh Innovations Private Limited, Jan 2026 to Jun 2026. Worked with the security team on vulnerability and security analysis, CVE research, compliance-oriented security review and technology assessment across client-facing IT environments, including projects involving government-related clients. |
-| **Research** | Co-author of *Artificial Intelligence in Aging Research: Advanced Models for Detecting and Targeting Cellular Senescence*, Madhya Bharti Journal (UGC CARE Group I), Vol. 86, No. 7, 2025. Independent vulnerability research in [ssh-enum](https://github.com/Alisha-chaudhary/ssh-enum). |
-| **Open source** | Pull request to [mitreattack-python](https://github.com/mitre-attack/mitreattack-python) fixing an `AttributeError` in the navlayers exporter, with regression tests added. Under maintainer review. |
-| **Education** | B.Sc. Computer Applications, St. Francis College for Women, Osmania University. |
-| **Certification** | Google Cybersecurity Professional Certificate |
+<img src="assets/record-experience.svg" alt="Experience. Cybersecurity Analyst Intern, Deepharsh Innovations Private Limited, Jan 2026 to Jun 2026. Vulnerability and security analysis, CVE research, compliance-oriented review and technology assessment across client-facing IT environments, including government-related client projects." width="100%">
+
+<img src="assets/record-research.svg" alt="Research. Co-author of Artificial Intelligence in Aging Research: Advanced Models for Detecting and Targeting Cellular Senescence, Madhya Bharti Journal (UGC CARE Group I), Vol. 86, No. 7, 2025. Independent vulnerability research in ssh-enum." width="100%">
+
+<img src="assets/record-opensource.svg" alt="Open source. Pull request to mitreattack-python fixing an AttributeError in the navlayers exporter, with regression tests added. Under maintainer review." width="100%">
+
+<img src="assets/record-education.svg" alt="Education. B.Sc. Computer Applications, St. Francis College for Women, Osmania University. CGPA 8.45 out of 10." width="100%">
+
+<img src="assets/record-certification.svg" alt="Certification. Google Cybersecurity Professional Certificate." width="100%">
+
+<p align="center">
+<a href="https://github.com/Alisha-chaudhary/ssh-enum">ssh-enum research</a>
+&nbsp;·&nbsp;
+<a href="https://github.com/mitre-attack/mitreattack-python">mitreattack-python contribution</a>
+</p>
 
 <br>
 
@@ -79,6 +94,7 @@
 <img src="output/fire-contribution.svg" alt="Animated fire effect across my GitHub contribution graph" width="100%">
 
 <a href="https://github.com/Alisha-chaudhary"><img src="https://github-readme-stats.vercel.app/api?username=Alisha-chaudhary&show_icons=true&hide_border=false&bg_color=0B0B0E&title_color=C58A63&text_color=D9D2CB&icon_color=A83B32&border_color=391521&rank_icon=github" alt="GitHub statistics card" height="165"></a>
+
 <a href="https://github.com/Alisha-chaudhary?tab=repositories"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alisha-chaudhary&layout=compact&bg_color=0B0B0E&title_color=C58A63&text_color=D9D2CB&border_color=391521" alt="Most used languages" height="165"></a>
 
 <sub>If the statistics cards do not load, the numbers live on the <a href="https://github.com/Alisha-chaudhary">profile page</a>.</sub>
@@ -88,4 +104,3 @@
 <br>
 
 <img src="assets/footer.svg" alt="EMBER ARCHIVE. Security through evidence, clarity, and careful engineering." width="100%">
-
